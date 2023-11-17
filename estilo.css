@@ -54,7 +54,9 @@ a{
 .menu {
   list-style: none; 
   padding: 0;
+  margin: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center; 
 }
 .menu li {
@@ -113,3 +115,23 @@ footer{
   top: 15px;
 }
 /* Fin del footer */
+/* ajuste movil */
+@media screen and (max-width: 780px) {
+  .logo img {
+    height: 80px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .menu li {
+    flex: 0 0 100%;
+    max-width: 30%;
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+}
